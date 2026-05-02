@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bhwkk06vq62at"]
+
+[ext_resource type="Script" uid="uid://d3guijpeowidp" path="res://ui/combat_ui/action_window/action_window.gd" id="1_2yxjl"]
+
+[node name="action_window" type="MarginContainer" unique_id=220959367]
+offset_top = 1.0
+offset_right = 40.0
+offset_bottom = 41.0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+script = ExtResource("1_2yxjl")
+
+[node name="action_button" type="Button" parent="." unique_id=1132585541]
+layout_mode = 2
+text = "Acción"

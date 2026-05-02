@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://bybydb502ovr"]
+
+[ext_resource type="Script" uid="uid://bmqmopjvu3u5k" path="res://entities/player/player.gd" id="1_abrql"]
+[ext_resource type="Texture2D" uid="uid://cuk7q4n0q1snh" path="res://assets/sprites/deltarune_ch1/kris_combat_idle.png" id="1_symyc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_abrql"]
+atlas = ExtResource("1_symyc")
+region = Rect2(0, 0, 36, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sglur"]
+atlas = ExtResource("1_symyc")
+region = Rect2(36, 0, 36, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bls4j"]
+atlas = ExtResource("1_symyc")
+region = Rect2(72, 0, 36, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fkugw"]
+atlas = ExtResource("1_symyc")
+region = Rect2(108, 0, 36, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8fjmc"]
+atlas = ExtResource("1_symyc")
+region = Rect2(144, 0, 36, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qiwj3"]
+atlas = ExtResource("1_symyc")
+region = Rect2(180, 0, 36, 38)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sfv1e"]
+animations = [{
+"frames": [{
+"duration": 5.0,
+"texture": SubResource("AtlasTexture_abrql")
+}, {
+"duration": 5.0,
+"texture": SubResource("AtlasTexture_sglur")
+}, {
+"duration": 5.0,
+"texture": SubResource("AtlasTexture_bls4j")
+}, {
+"duration": 5.0,
+"texture": SubResource("AtlasTexture_fkugw")
+}, {
+"duration": 5.0,
+"texture": SubResource("AtlasTexture_8fjmc")
+}, {
+"duration": 5.0,
+"texture": SubResource("AtlasTexture_qiwj3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_26q78"]
+radius = 8.0
+height = 32.0
+
+[node name="Player" type="CharacterBody2D" unique_id=2138040418]
+script = ExtResource("1_abrql")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1431078818]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sfv1e")
+autoplay = "default"
+frame = 4
+frame_progress = 0.91980934
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1199922222]
+position = Vector2(-5, 3)
+shape = SubResource("CapsuleShape2D_26q78")
+metadata/_edit_lock_ = true
+
+[node name="MarkerUI" type="Marker2D" parent="." unique_id=1335442162]
+position = Vector2(-5, 19)
+metadata/_edit_lock_ = true

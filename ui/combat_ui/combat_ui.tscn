@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b8cp6bdtppmos"]
+
+[ext_resource type="PackedScene" uid="uid://bjdu4wj0bws2h" path="res://ui/combat_ui/actions_ui/actions_ui.tscn" id="1_03uuy"]
+[ext_resource type="PackedScene" uid="uid://b2lwhhji8i3ih" path="res://ui/combat_ui/bars_ui/bars_ui.tscn" id="2_om6eh"]
+
+[node name="combat_ui" type="CanvasLayer" unique_id=1364417827]
+
+[node name="actions_ui" parent="." unique_id=1242854132 instance=ExtResource("1_03uuy")]
+
+[node name="bars_ui" parent="." unique_id=896323894 instance=ExtResource("2_om6eh")]

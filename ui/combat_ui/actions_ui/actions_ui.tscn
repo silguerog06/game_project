@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://bjdu4wj0bws2h"]
+
+[ext_resource type="Script" uid="uid://7kkae5v7os04" path="res://ui/combat_ui/actions_ui/actions_ui.gd" id="1_3hrw7"]
+[ext_resource type="PackedScene" uid="uid://bhwkk06vq62at" path="res://ui/combat_ui/action_window/action_window.tscn" id="1_wof36"]
+
+[node name="actions_ui" type="CanvasLayer" unique_id=1242854132]
+script = ExtResource("1_3hrw7")
+marker_offset = Vector2(20, -55)
+
+[node name="ui_container" type="VBoxContainer" parent="." unique_id=623370543]
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="actions_grid" type="GridContainer" parent="ui_container" unique_id=553694554]
+layout_mode = 2
+columns = 3
+
+[node name="burst_action" parent="ui_container/actions_grid" unique_id=220959367 instance=ExtResource("1_wof36")]
+layout_mode = 2
+button_text = "Burst"
+
+[node name="empty_action1" parent="ui_container/actions_grid" unique_id=1196982912 instance=ExtResource("1_wof36")]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="guard_action" parent="ui_container/actions_grid" unique_id=892005367 instance=ExtResource("1_wof36")]
+layout_mode = 2
+theme_override_constants/margin_right = 40
+button_text = "Guard"
+
+[node name="empty_action2" parent="ui_container/actions_grid" unique_id=1505084403 instance=ExtResource("1_wof36")]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="empty_action3" parent="ui_container/actions_grid" unique_id=932918898 instance=ExtResource("1_wof36")]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="item_action" parent="ui_container/actions_grid" unique_id=1882478151 instance=ExtResource("1_wof36")]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_right = 0
+button_text = "Item"
+
+[node name="flee_action" parent="ui_container/actions_grid" unique_id=1331472273 instance=ExtResource("1_wof36")]
+layout_mode = 2
+button_text = "Flee"
+
+[node name="empty_action4" parent="ui_container/actions_grid" unique_id=686166381 instance=ExtResource("1_wof36")]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="attack_action" parent="ui_container/actions_grid" unique_id=802534646 instance=ExtResource("1_wof36")]
+layout_mode = 2
+theme_override_constants/margin_right = 40
+button_text = "Attack"
+
+[node name="label_margin" type="MarginContainer" parent="ui_container" unique_id=1868725243]
+layout_mode = 2
+theme_override_constants/margin_right = 30
+
+[node name="actions_counter" type="Label" parent="ui_container/label_margin" unique_id=1132141769]
+layout_mode = 2
+text = "X 2"
+horizontal_alignment = 1

@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://b2lwhhji8i3ih"]
+
+[node name="bars_ui" type="CanvasLayer" unique_id=896323894]
+
+[node name="LMarginContainer" type="MarginContainer" parent="." unique_id=465526044]
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 70.0
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 150
+theme_override_constants/margin_bottom = 150
+
+[node name="HBoxContainer" type="HBoxContainer" parent="LMarginContainer" unique_id=1072665666]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="HealthBar" type="ProgressBar" parent="LMarginContainer/HBoxContainer" unique_id=1304928982]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+size_flags_vertical = 1
+value = 70.0
+fill_mode = 3
+show_percentage = false
+
+[node name="EnergyBar" type="ProgressBar" parent="LMarginContainer/HBoxContainer" unique_id=780609048]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+size_flags_vertical = 1
+value = 30.0
+fill_mode = 3
+show_percentage = false
+
+[node name="RMarginContainer" type="MarginContainer" parent="." unique_id=1901706809]
+visible = false
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -80.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 150
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 150
+
+[node name="HBoxContainer" type="HBoxContainer" parent="RMarginContainer" unique_id=1078890792]
+layout_mode = 2
+alignment = 2
+
+[node name="BossBar" type="ProgressBar" parent="RMarginContainer/HBoxContainer" unique_id=1870013199]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+size_flags_vertical = 1
+value = 30.0
+fill_mode = 3
+show_percentage = false
