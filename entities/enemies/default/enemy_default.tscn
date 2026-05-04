@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://btgeos5ddww5j"]
+
+[ext_resource type="Script" uid="uid://cukwy38r8ob5v" path="res://entities/enemies/default/enemy_default.gd" id="1_v33vm"]
+
+[sub_resource type="Animation" id="Animation_ryysy"]
+resource_name = "enemy_hurt"
+
+[sub_resource type="Animation" id="Animation_eoi5k"]
+resource_name = "enemy_idle"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_d4vsl"]
+_data = {
+&"enemy_hurt": SubResource("Animation_ryysy"),
+&"enemy_idle": SubResource("Animation_eoi5k")
+}
+
+[node name="enemy_default" type="Node2D" unique_id=705306956]
+script = ExtResource("1_v33vm")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1363318954]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1316717241]
+libraries/ = SubResource("AnimationLibrary_d4vsl")
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=609899202]

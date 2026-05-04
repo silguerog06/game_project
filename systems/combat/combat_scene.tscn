@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dw1pivd2opy7d"]
 
 [ext_resource type="Texture2D" uid="uid://wq74i1yphwtu" path="res://assets/sprites/backgrounds/combat/BBS_1.png" id="1_4v8y6"]
+[ext_resource type="Script" uid="uid://lro3lgp7nhgg" path="res://systems/combat/combat_scene.gd" id="1_naumx"]
 [ext_resource type="Texture2D" uid="uid://cat8m0psg16xj" path="res://assets/sprites/backgrounds/combat/BBS_2.png" id="2_3clp2"]
 [ext_resource type="Texture2D" uid="uid://w7k2ffyfpyjd" path="res://assets/sprites/backgrounds/combat/BBS_3.png" id="3_p3e3m"]
 [ext_resource type="Texture2D" uid="uid://bmkwwospvguap" path="res://assets/sprites/backgrounds/combat/BBS_4.png" id="4_naumx"]
@@ -100,7 +101,6 @@
 [ext_resource type="Texture2D" uid="uid://dde4raprnvm5g" path="res://assets/sprites/backgrounds/combat/BBS_98.png" id="98_sepsm"]
 [ext_resource type="Texture2D" uid="uid://bn1egicusk4xk" path="res://assets/sprites/backgrounds/combat/BBS_99.png" id="99_jv42h"]
 [ext_resource type="Texture2D" uid="uid://c6c0jnrowrx3d" path="res://assets/sprites/backgrounds/combat/BBS_100.png" id="100_00cyt"]
-[ext_resource type="PackedScene" uid="uid://bybydb502ovr" path="res://entities/player/player.tscn" id="101_3clp2"]
 [ext_resource type="PackedScene" uid="uid://b8cp6bdtppmos" path="res://ui/combat_ui/combat_ui.tscn" id="102_p3e3m"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mnjqb"]
@@ -411,7 +411,8 @@ animations = [{
 "speed": 30.0
 }]
 
-[node name="CombatScene" type="Node2D" unique_id=1626071346]
+[node name="combat_scene" type="Node2D" unique_id=1626071346]
+script = ExtResource("1_naumx")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=337075990]
 metadata/_edit_lock_ = true
@@ -423,8 +424,36 @@ autoplay = "default"
 frame_progress = 0.85305035
 metadata/_edit_lock_ = true
 
-[node name="Player" parent="." unique_id=2138040418 instance=ExtResource("101_3clp2")]
-position = Vector2(-300, 50)
-scale = Vector2(3, 3)
-
 [node name="combat_ui" parent="." unique_id=1364417827 instance=ExtResource("102_p3e3m")]
+
+[node name="PlayerSpawn" type="Marker2D" parent="." unique_id=1754548149]
+position = Vector2(-300, 0)
+
+[node name="EnemyFormations" type="Node2D" parent="." unique_id=1063253776]
+
+[node name="Formation1" type="Node2D" parent="EnemyFormations" unique_id=354965559]
+position = Vector2(0, -1)
+
+[node name="EnemySpawn1" type="Marker2D" parent="EnemyFormations/Formation1" unique_id=1059927300]
+position = Vector2(350, 0)
+
+[node name="Formation2" type="Node2D" parent="EnemyFormations" unique_id=1288726982]
+position = Vector2(0, -1)
+
+[node name="EnemySpawn1" type="Marker2D" parent="EnemyFormations/Formation2" unique_id=772868229]
+position = Vector2(350, -150)
+
+[node name="EnemySpawn2" type="Marker2D" parent="EnemyFormations/Formation2" unique_id=601707732]
+position = Vector2(350, 150)
+
+[node name="Formation3" type="Node2D" parent="EnemyFormations" unique_id=117822858]
+position = Vector2(0, -1)
+
+[node name="EnemySpawn1" type="Marker2D" parent="EnemyFormations/Formation3" unique_id=1519474460]
+position = Vector2(250, -150)
+
+[node name="EnemySpawn2" type="Marker2D" parent="EnemyFormations/Formation3" unique_id=3339994]
+position = Vector2(400, 0)
+
+[node name="EnemySpawn3" type="Marker2D" parent="EnemyFormations/Formation3" unique_id=1468097]
+position = Vector2(250, 150)

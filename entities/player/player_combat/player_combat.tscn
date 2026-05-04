@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bybydb502ovr"]
+
+[ext_resource type="Script" uid="uid://bmqmopjvu3u5k" path="res://entities/player/player_combat/player_combat.gd" id="1_abrql"]
+[ext_resource type="SpriteFrames" uid="uid://f8n20055adky" path="res://assets/resources/player_combat_animations.tres" id="2_iyvjc"]
+
+[node name="player_combat" type="Node2D" unique_id=1185453800]
+script = ExtResource("1_abrql")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1431078818]
+texture_filter = 1
+scale = Vector2(3, 3)
+sprite_frames = ExtResource("2_iyvjc")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="MarkerUI" type="Marker2D" parent="." unique_id=1335442162]

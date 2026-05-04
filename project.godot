@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameBus="*uid://dnw487eijxls6"
+PlayerData="*uid://dncii47t021yu"
 
 [physics]
 
