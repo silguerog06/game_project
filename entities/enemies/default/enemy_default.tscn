@@ -2,6 +2,24 @@
 
 [ext_resource type="Script" uid="uid://cukwy38r8ob5v" path="res://entities/enemies/default/enemy_default.gd" id="1_v33vm"]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_v33vm"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"hurt",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
 [sub_resource type="Animation" id="Animation_ryysy"]
 resource_name = "enemy_hurt"
 
@@ -15,9 +33,13 @@ _data = {
 }
 
 [node name="enemy_default" type="Node2D" unique_id=705306956]
+scale = Vector2(3, 3)
 script = ExtResource("1_v33vm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1363318954]
+sprite_frames = SubResource("SpriteFrames_v33vm")
+animation = &"idle"
+autoplay = "idle"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1316717241]
 libraries/ = SubResource("AnimationLibrary_d4vsl")

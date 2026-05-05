@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://ctucx01esu1j"]
+
+[ext_resource type="PackedScene" uid="uid://btgeos5ddww5j" path="res://entities/enemies/default/enemy_default.tscn" id="1_3ybgr"]
+[ext_resource type="Texture2D" uid="uid://bm5xxgi0ey0gt" path="res://entities/enemies/fly/fly_idle.png" id="2_mrqji"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ev06m"]
+atlas = ExtResource("2_mrqji")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eik8v"]
+atlas = ExtResource("2_mrqji")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j8dc4"]
+atlas = ExtResource("2_mrqji")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_un0m6"]
+atlas = ExtResource("2_mrqji")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ndcp"]
+atlas = ExtResource("2_mrqji")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k2my4"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ev06m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eik8v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j8dc4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_un0m6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ndcp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_un0m6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j8dc4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eik8v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ev06m")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}]
+
+[node name="enemy_fly" unique_id=705306956 instance=ExtResource("1_3ybgr")]
+enemy_name = "Fly"
+
+[node name="AnimatedSprite2D" parent="." index="0" unique_id=1363318954]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_k2my4")
+frame_progress = 0.079068296

@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GameBus="*uid://dnw487eijxls6"
 PlayerData="*uid://dncii47t021yu"
+CombatManager="*uid://c40yre77ovmlf"
 
 [physics]
 
