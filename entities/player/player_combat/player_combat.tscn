@@ -4,13 +4,16 @@
 [ext_resource type="SpriteFrames" uid="uid://f8n20055adky" path="res://assets/resources/player_combat_animations.tres" id="2_iyvjc"]
 
 [node name="player_combat" type="Node2D" unique_id=1185453800]
+scale = Vector2(6, 6)
 script = ExtResource("1_abrql")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1431078818]
 texture_filter = 1
-scale = Vector2(3, 3)
+scale = Vector2(0.8, 0.8)
 sprite_frames = ExtResource("2_iyvjc")
 animation = &"idle"
 autoplay = "idle"
+frame_progress = 0.27719146
 
 [node name="MarkerUI" type="Marker2D" parent="." unique_id=1335442162]
+position = Vector2(2.5, -1.3333333)

@@ -1,53 +1,54 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://f8n20055adky"]
 
-[ext_resource type="Texture2D" uid="uid://cuk7q4n0q1snh" path="res://assets/sprites/deltarune_ch1/kris_combat_idle.png" id="1_7plv7"]
+[ext_resource type="Texture2D" uid="uid://cah6g3pxq4v1d" path="res://entities/player/player_combat/player_idle.png" id="1_7plv7"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_abrql"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_7plv7"]
 atlas = ExtResource("1_7plv7")
-region = Rect2(0, 0, 36, 38)
+region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_sglur"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_83kbx"]
 atlas = ExtResource("1_7plv7")
-region = Rect2(36, 0, 36, 38)
+region = Rect2(32, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bls4j"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ppdx5"]
 atlas = ExtResource("1_7plv7")
-region = Rect2(72, 0, 36, 38)
+region = Rect2(0, 32, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_fkugw"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_t702l"]
 atlas = ExtResource("1_7plv7")
-region = Rect2(108, 0, 36, 38)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8fjmc"]
-atlas = ExtResource("1_7plv7")
-region = Rect2(144, 0, 36, 38)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qiwj3"]
-atlas = ExtResource("1_7plv7")
-region = Rect2(180, 0, 36, 38)
+region = Rect2(32, 32, 32, 32)
 
 [resource]
 animations = [{
 "frames": [{
-"duration": 5.0,
-"texture": SubResource("AtlasTexture_abrql")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7plv7")
 }, {
-"duration": 5.0,
-"texture": SubResource("AtlasTexture_sglur")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_83kbx")
 }, {
-"duration": 5.0,
-"texture": SubResource("AtlasTexture_bls4j")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ppdx5")
 }, {
-"duration": 5.0,
-"texture": SubResource("AtlasTexture_fkugw")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t702l")
 }, {
-"duration": 5.0,
-"texture": SubResource("AtlasTexture_8fjmc")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t702l")
 }, {
-"duration": 5.0,
-"texture": SubResource("AtlasTexture_qiwj3")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t702l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ppdx5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_83kbx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7plv7")
 }],
 "loop": true,
 "name": &"idle",
-"speed": 30.0
+"speed": 7.0
 }]

@@ -442,10 +442,10 @@ position = Vector2(350, 0)
 position = Vector2(0, -1)
 
 [node name="EnemySpawn1" type="Marker2D" parent="EnemyFormations/Formation2" unique_id=772868229]
-position = Vector2(350, -150)
+position = Vector2(300, -150)
 
 [node name="EnemySpawn2" type="Marker2D" parent="EnemyFormations/Formation2" unique_id=601707732]
-position = Vector2(350, 150)
+position = Vector2(300, 150)
 
 [node name="Formation3" type="Node2D" parent="EnemyFormations" unique_id=117822858]
 position = Vector2(0, -1)
