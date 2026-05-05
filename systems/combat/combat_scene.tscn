@@ -413,6 +413,7 @@ animations = [{
 
 [node name="combat_scene" type="Node2D" unique_id=1626071346]
 script = ExtResource("1_naumx")
+enemy_count = 3
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=337075990]
 metadata/_edit_lock_ = true

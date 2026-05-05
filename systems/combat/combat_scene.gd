@@ -2,7 +2,7 @@ extends Node2D
 
 const PLAYER_COMBAT = preload("uid://bybydb502ovr")
 
-
+@export_range(1, 3) var enemy_count: int = 1
 
 func _ready() -> void:
 	_spawn_player()
@@ -17,11 +17,14 @@ func _spawn_player() -> void:
 	add_child(p)
 
 func _spawn_enemies() -> void:
-	var enemies = CombatManager.enemies_to_spawn
-	var count = enemies.size()
+	var enemies: Array[PackedScene] = []
+	
+	for i in range(enemy_count):
+		enemies.append(CombatManager.enemy_to_spawn)
+	
 	var selected_markers: Array = []
 	
-	match count:
+	match enemy_count:
 		1:
 			selected_markers = $EnemyFormations/Formation1.get_children()
 		2:
@@ -30,8 +33,9 @@ func _spawn_enemies() -> void:
 			selected_markers = $EnemyFormations/Formation3.get_children()
 		_:
 			selected_markers = $EnemyFormations/Formation3.get_children()
+			print("[UNEXPECTED] Enemy overflow on spawn")
 
-	for i in range(count):
+	for i in range(enemy_count):
 		if i < selected_markers.size():
 			var enemy_instance = enemies[i].instantiate()
 			enemy_instance.global_position = selected_markers[i].global_position
