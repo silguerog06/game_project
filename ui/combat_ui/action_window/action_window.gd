@@ -1,17 +1,25 @@
 @tool
 extends MarginContainer
 
+@onready var internal_button: Button = $action_button
+
 @export var button_text: String = "Acción":
 	set(value):
 		button_text = value
 		if is_node_ready():
-			$action_button.text = value
+			internal_button.text = value
+			
+@export var action_shortcut: Shortcut:
+	set(value):
+		action_shortcut = value
+		if internal_button:
+			internal_button.shortcut = value
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$action_button.text = button_text
+	if action_shortcut:
+		internal_button.shortcut = action_shortcut
+	internal_button.text = button_text
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass

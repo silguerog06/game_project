@@ -13,7 +13,7 @@ func _process(delta: float) -> void:
 
 func _spawn_player() -> void:
 	var p: Node2D = PLAYER_COMBAT.instantiate()
-	p.global_position = $PlayerSpawn.global_position
+	p.global_position = $EntitiesSpawns/PlayerSpawn.global_position
 	add_child(p)
 
 func _spawn_enemies() -> void:
@@ -26,13 +26,13 @@ func _spawn_enemies() -> void:
 	
 	match enemy_count:
 		1:
-			selected_markers = $EnemyFormations/Formation1.get_children()
+			selected_markers = $EntitiesSpawns/EnemyFormations/Formation1.get_children()
 		2:
-			selected_markers = $EnemyFormations/Formation2.get_children()
+			selected_markers = $EntitiesSpawns/EnemyFormations/Formation2.get_children()
 		3:
-			selected_markers = $EnemyFormations/Formation3.get_children()
+			selected_markers = $EntitiesSpawns/EnemyFormations/Formation3.get_children()
 		_:
-			selected_markers = $EnemyFormations/Formation3.get_children()
+			selected_markers = $EntitiesSpawns/EnemyFormations/Formation3.get_children()
 			print("[UNEXPECTED] Enemy overflow on spawn")
 
 	for i in range(enemy_count):

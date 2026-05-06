@@ -416,45 +416,45 @@ script = ExtResource("1_naumx")
 enemy_count = 3
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=337075990]
-metadata/_edit_lock_ = true
+position = Vector2(320, 180)
 
 [node name="Background" type="AnimatedSprite2D" parent="." unique_id=1936278336]
-scale = Vector2(2, 2)
+position = Vector2(320, 180)
 sprite_frames = SubResource("SpriteFrames_mnjqb")
 autoplay = "default"
 frame_progress = 0.85305035
-metadata/_edit_lock_ = true
 
 [node name="combat_ui" parent="." unique_id=1364417827 instance=ExtResource("102_p3e3m")]
 
-[node name="PlayerSpawn" type="Marker2D" parent="." unique_id=1754548149]
+[node name="EntitiesSpawns" type="Node2D" parent="." unique_id=1905964384]
+position = Vector2(320, 180)
+scale = Vector2(0.5, 0.5)
+
+[node name="PlayerSpawn" type="Marker2D" parent="EntitiesSpawns" unique_id=1754548149]
 position = Vector2(-300, 0)
 
-[node name="EnemyFormations" type="Node2D" parent="." unique_id=1063253776]
+[node name="EnemyFormations" type="Node2D" parent="EntitiesSpawns" unique_id=1063253776]
 
-[node name="Formation1" type="Node2D" parent="EnemyFormations" unique_id=354965559]
-position = Vector2(0, -1)
+[node name="Formation1" type="Node2D" parent="EntitiesSpawns/EnemyFormations" unique_id=354965559]
 
-[node name="EnemySpawn1" type="Marker2D" parent="EnemyFormations/Formation1" unique_id=1059927300]
+[node name="EnemySpawn1" type="Marker2D" parent="EntitiesSpawns/EnemyFormations/Formation1" unique_id=1059927300]
 position = Vector2(350, 0)
 
-[node name="Formation2" type="Node2D" parent="EnemyFormations" unique_id=1288726982]
-position = Vector2(0, -1)
+[node name="Formation2" type="Node2D" parent="EntitiesSpawns/EnemyFormations" unique_id=1288726982]
 
-[node name="EnemySpawn1" type="Marker2D" parent="EnemyFormations/Formation2" unique_id=772868229]
+[node name="EnemySpawn1" type="Marker2D" parent="EntitiesSpawns/EnemyFormations/Formation2" unique_id=772868229]
 position = Vector2(300, -150)
 
-[node name="EnemySpawn2" type="Marker2D" parent="EnemyFormations/Formation2" unique_id=601707732]
+[node name="EnemySpawn2" type="Marker2D" parent="EntitiesSpawns/EnemyFormations/Formation2" unique_id=601707732]
 position = Vector2(300, 150)
 
-[node name="Formation3" type="Node2D" parent="EnemyFormations" unique_id=117822858]
-position = Vector2(0, -1)
+[node name="Formation3" type="Node2D" parent="EntitiesSpawns/EnemyFormations" unique_id=117822858]
 
-[node name="EnemySpawn1" type="Marker2D" parent="EnemyFormations/Formation3" unique_id=1519474460]
+[node name="EnemySpawn1" type="Marker2D" parent="EntitiesSpawns/EnemyFormations/Formation3" unique_id=1519474460]
 position = Vector2(250, -150)
 
-[node name="EnemySpawn2" type="Marker2D" parent="EnemyFormations/Formation3" unique_id=3339994]
+[node name="EnemySpawn2" type="Marker2D" parent="EntitiesSpawns/EnemyFormations/Formation3" unique_id=3339994]
 position = Vector2(400, 0)
 
-[node name="EnemySpawn3" type="Marker2D" parent="EnemyFormations/Formation3" unique_id=1468097]
+[node name="EnemySpawn3" type="Marker2D" parent="EntitiesSpawns/EnemyFormations/Formation3" unique_id=1468097]
 position = Vector2(250, 150)

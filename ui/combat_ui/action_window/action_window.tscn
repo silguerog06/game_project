@@ -2,10 +2,12 @@
 
 [ext_resource type="Script" uid="uid://d3guijpeowidp" path="res://ui/combat_ui/action_window/action_window.gd" id="1_2yxjl"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5b7t1"]
+bg_color = Color(1, 0.34905535, 0.21703982, 1)
+
 [node name="action_window" type="MarginContainer" unique_id=220959367]
-offset_top = 1.0
-offset_right = 40.0
-offset_bottom = 41.0
+offset_right = 54.0
+offset_bottom = 40.0
 theme_override_constants/margin_left = 10
 theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
@@ -14,4 +16,7 @@ script = ExtResource("1_2yxjl")
 
 [node name="action_button" type="Button" parent="." unique_id=1132585541]
 layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/font_size = 8
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5b7t1")
 text = "Acción"

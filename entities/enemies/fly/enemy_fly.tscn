@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ctucx01esu1j"]
 
 [ext_resource type="PackedScene" uid="uid://btgeos5ddww5j" path="res://entities/enemies/default/enemy_default.tscn" id="1_3ybgr"]
-[ext_resource type="Texture2D" uid="uid://bm5xxgi0ey0gt" path="res://entities/enemies/fly/fly_idle.png" id="2_mrqji"]
+[ext_resource type="Texture2D" uid="uid://bt0lgvgsmxxfk" path="res://entities/enemies/fly/fly_idle.png" id="2_mrqji"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ev06m"]
 atlas = ExtResource("2_mrqji")
@@ -69,6 +69,7 @@ animations = [{
 }]
 
 [node name="enemy_fly" unique_id=705306956 instance=ExtResource("1_3ybgr")]
+scale = Vector2(1.5, 1.5)
 enemy_name = "Fly"
 
 [node name="AnimatedSprite2D" parent="." index="0" unique_id=1363318954]

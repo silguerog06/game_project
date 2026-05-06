@@ -3,6 +3,45 @@
 [ext_resource type="Script" uid="uid://7kkae5v7os04" path="res://ui/combat_ui/actions_ui/actions_ui.gd" id="1_3hrw7"]
 [ext_resource type="PackedScene" uid="uid://bhwkk06vq62at" path="res://ui/combat_ui/action_window/action_window.tscn" id="1_wof36"]
 
+[sub_resource type="InputEventKey" id="InputEventKey_6vndc"]
+device = -1
+keycode = 65
+unicode = 97
+
+[sub_resource type="Shortcut" id="Shortcut_6bvol"]
+events = [SubResource("InputEventKey_6vndc")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_6bvol"]
+device = -1
+keycode = 68
+unicode = 100
+
+[sub_resource type="Shortcut" id="Shortcut_f0ocr"]
+events = [SubResource("InputEventKey_6bvol")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_utepg"]
+device = -1
+keycode = 87
+unicode = 119
+
+[sub_resource type="Shortcut" id="Shortcut_2bujt"]
+events = [SubResource("InputEventKey_utepg")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_rwiti"]
+device = -1
+keycode = 4194325
+
+[sub_resource type="Shortcut" id="Shortcut_htcfy"]
+events = [SubResource("InputEventKey_rwiti")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_l66x6"]
+device = -1
+keycode = 83
+unicode = 115
+
+[sub_resource type="Shortcut" id="Shortcut_utwd6"]
+events = [SubResource("InputEventKey_l66x6")]
+
 [node name="actions_ui" type="CanvasLayer" unique_id=1242854132]
 script = ExtResource("1_3hrw7")
 
@@ -17,49 +56,87 @@ columns = 3
 
 [node name="BurstAction" parent="UIContainer/ActionsGrid" unique_id=220959367 instance=ExtResource("1_wof36")]
 layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
 button_text = "Burst"
+action_shortcut = SubResource("Shortcut_6bvol")
 
 [node name="EmptyAction1" parent="UIContainer/ActionsGrid" unique_id=1196982912 instance=ExtResource("1_wof36")]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
 
 [node name="GuardAction" parent="UIContainer/ActionsGrid" unique_id=892005367 instance=ExtResource("1_wof36")]
 layout_mode = 2
-theme_override_constants/margin_right = 40
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 5
 button_text = "Guard"
+action_shortcut = SubResource("Shortcut_f0ocr")
 
 [node name="EmptyAction2" parent="UIContainer/ActionsGrid" unique_id=1505084403 instance=ExtResource("1_wof36")]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
 
 [node name="EmptyAction3" parent="UIContainer/ActionsGrid" unique_id=932918898 instance=ExtResource("1_wof36")]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
 
 [node name="ItemAction" parent="UIContainer/ActionsGrid" unique_id=1882478151 instance=ExtResource("1_wof36")]
 layout_mode = 2
-theme_override_constants/margin_left = 50
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 5
 button_text = "Item"
+action_shortcut = SubResource("Shortcut_2bujt")
 
 [node name="FleeAction" parent="UIContainer/ActionsGrid" unique_id=1331472273 instance=ExtResource("1_wof36")]
 layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
 button_text = "Flee"
+action_shortcut = SubResource("Shortcut_htcfy")
 
 [node name="EmptyAction4" parent="UIContainer/ActionsGrid" unique_id=686166381 instance=ExtResource("1_wof36")]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
 
 [node name="AttackAction" parent="UIContainer/ActionsGrid" unique_id=802534646 instance=ExtResource("1_wof36")]
 layout_mode = 2
-theme_override_constants/margin_right = 40
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 5
 button_text = "Attack"
+action_shortcut = SubResource("Shortcut_utwd6")
 
 [node name="LabelMargin" type="MarginContainer" parent="UIContainer" unique_id=1868725243]
 layout_mode = 2
-theme_override_constants/margin_right = 30
+theme_override_constants/margin_right = 10
 
 [node name="ActionsCounter" type="Label" parent="UIContainer/LabelMargin" unique_id=1132141769]
 layout_mode = 2
+theme_override_font_sizes/font_size = 8
 text = "X 2"
 horizontal_alignment = 1

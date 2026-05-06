@@ -4,7 +4,7 @@
 [ext_resource type="SpriteFrames" uid="uid://f8n20055adky" path="res://assets/resources/player_combat_animations.tres" id="2_iyvjc"]
 
 [node name="player_combat" type="Node2D" unique_id=1185453800]
-scale = Vector2(6, 6)
+scale = Vector2(2.5, 2.5)
 script = ExtResource("1_abrql")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1431078818]
