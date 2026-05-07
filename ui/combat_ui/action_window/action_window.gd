@@ -1,5 +1,8 @@
 @tool
+class_name ActionWindow
 extends MarginContainer
+
+signal action_selected
 
 @onready var internal_button: Button = $action_button
 
@@ -16,6 +19,8 @@ extends MarginContainer
 			internal_button.shortcut = value
 
 func _ready() -> void:
+	$action_button.pressed.connect(func(): action_selected.emit())
+	
 	if action_shortcut:
 		internal_button.shortcut = action_shortcut
 	internal_button.text = button_text

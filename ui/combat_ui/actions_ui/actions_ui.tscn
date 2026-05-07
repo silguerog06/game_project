@@ -44,6 +44,7 @@ events = [SubResource("InputEventKey_l66x6")]
 
 [node name="actions_ui" type="CanvasLayer" unique_id=1242854132]
 script = ExtResource("1_3hrw7")
+marker_offset = null
 
 [node name="UIContainer" type="VBoxContainer" parent="." unique_id=623370543]
 offset_right = 40.0
