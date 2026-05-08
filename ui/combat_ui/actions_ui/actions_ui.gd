@@ -1,3 +1,4 @@
+class_name ActionsUI
 extends CanvasLayer
 
 signal burst_selected
@@ -10,6 +11,7 @@ signal attack_selected
 
 var player_marker: Marker2D
 
+@onready var action_count_label: Label = $UIContainer/LabelMargin/ActionsCounter
 @onready var burst_window: ActionWindow = $UIContainer/ActionsGrid/BurstAction
 @onready var guard_window: ActionWindow = $UIContainer/ActionsGrid/GuardAction
 @onready var item_window: ActionWindow = $UIContainer/ActionsGrid/ItemAction
@@ -25,7 +27,18 @@ func _ready() -> void:
 	flee_window.action_selected.connect(func(): flee_selected.emit())
 	attack_window.action_selected.connect(func(): attack_selected.emit())
 	
+	# Recibir posición Player
 	GameBus.player_marker_ready.connect(_on_player_marker_recieved)
+
+func set_remaining_actions(value: int):
+	if action_count_label:
+		if value >= 2:
+			action_count_label.text = "X " + str(value)
+			action_count_label.show()
+		else:
+			action_count_label.hide()
+	else:
+		push_error("Error: No encuentro el ActionsLabel dentro de actions_ui")
 
 func _on_player_marker_recieved(marker: Marker2D):
 	player_marker = marker

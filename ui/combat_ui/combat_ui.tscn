@@ -8,6 +8,5 @@
 script = ExtResource("1_om6eh")
 
 [node name="actions_ui" parent="." unique_id=1242854132 instance=ExtResource("1_03uuy")]
-marker_offset = Vector2(0, 0)
 
 [node name="bars_ui" parent="." unique_id=896323894 instance=ExtResource("2_om6eh")]

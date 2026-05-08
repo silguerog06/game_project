@@ -76,3 +76,6 @@ enemy_name = "Fly"
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_k2my4")
 frame_progress = 0.079068296
+
+[node name="Marker2D" parent="." index="2" unique_id=609899202]
+position = Vector2(0, -2)

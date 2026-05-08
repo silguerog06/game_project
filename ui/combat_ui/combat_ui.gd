@@ -7,7 +7,7 @@ signal flee_selected
 signal item_selected
 signal attack_selected
 
-@onready var actions_ui : CanvasLayer = $actions_ui
+@onready var actions_ui : ActionsUI = $actions_ui
 
 func _ready() -> void:
 	actions_ui.burst_selected.connect(func(): burst_selected.emit())
@@ -21,3 +21,9 @@ func _process(delta: float) -> void:
 
 func show_actions(value: bool):
 	actions_ui.visible = value
+
+func set_remaining_actions(value: int):
+	if actions_ui:
+		actions_ui.set_remaining_actions(value)
+	else:
+		push_error("Error: No encuentro el ActionsUI dentro de combat_ui")
