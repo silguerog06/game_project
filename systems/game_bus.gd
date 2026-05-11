@@ -4,7 +4,7 @@ extends Node
 ## encargado de recopilar y organizar las distintas señales entre componentes.
 
 # Posicionamiento de entidades al entrar en comabte
-signal player_marker_ready(marker: Marker2D)
+signal player_combat_spawned(player_combat: PlayerCombat)
 signal enemy_marker_ready(marker: Marker2D)
 
 # Cálculos de combate del jugador

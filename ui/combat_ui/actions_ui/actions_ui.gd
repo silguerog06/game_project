@@ -28,7 +28,7 @@ func _ready() -> void:
 	attack_window.action_selected.connect(func(): attack_selected.emit())
 	
 	# Recibir posición Player
-	GameBus.player_marker_ready.connect(_on_player_marker_recieved)
+	GameBus.player_combat_spawned.connect(_on_player_combat_recieved)
 
 func set_remaining_actions(value: int):
 	if action_count_label:
@@ -40,8 +40,8 @@ func set_remaining_actions(value: int):
 	else:
 		push_error("Error: No encuentro el ActionsLabel dentro de actions_ui")
 
-func _on_player_marker_recieved(marker: Marker2D):
-	player_marker = marker
+func _on_player_combat_recieved(player_combat: PlayerCombat):
+	player_marker = player_combat.player_marker
 	_align_menu_with_player()
 
 func _align_menu_with_player():

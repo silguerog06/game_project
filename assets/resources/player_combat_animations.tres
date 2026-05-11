@@ -1,6 +1,7 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://f8n20055adky"]
 
 [ext_resource type="Texture2D" uid="uid://cah6g3pxq4v1d" path="res://entities/player/player_combat/player_idle.png" id="1_7plv7"]
+[ext_resource type="Texture2D" uid="uid://bru7csm65ness" path="res://entities/player/player_combat/player_idle_burst.png" id="2_83kbx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7plv7"]
 atlas = ExtResource("1_7plv7")
@@ -16,6 +17,22 @@ region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t702l"]
 atlas = ExtResource("1_7plv7")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yet46"]
+atlas = ExtResource("2_83kbx")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gh28d"]
+atlas = ExtResource("2_83kbx")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gp3gg"]
+atlas = ExtResource("2_83kbx")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjh6g"]
+atlas = ExtResource("2_83kbx")
 region = Rect2(32, 32, 32, 32)
 
 [resource]
@@ -50,5 +67,37 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yet46")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gh28d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gp3gg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjh6g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjh6g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjh6g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gp3gg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gh28d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yet46")
+}],
+"loop": true,
+"name": &"idle_burst",
 "speed": 7.0
 }]

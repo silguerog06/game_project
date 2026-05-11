@@ -1,5 +1,15 @@
 [gd_scene format=3 uid="uid://b2lwhhji8i3ih"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ymk6w"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_edprp"]
+bg_color = Color(1, 0.30333334, 0.24000001, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_02a3w"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a1dcn"]
+bg_color = Color(0.2774142, 0.6961349, 0.4340268, 1)
+
 [node name="bars_ui" type="CanvasLayer" unique_id=896323894]
 
 [node name="LMarginContainer" type="MarginContainer" parent="." unique_id=465526044]
@@ -19,6 +29,8 @@ theme_override_constants/separation = 10
 custom_minimum_size = Vector2(8, 0)
 layout_mode = 2
 size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_ymk6w")
+theme_override_styles/fill = SubResource("StyleBoxFlat_edprp")
 value = 70.0
 fill_mode = 3
 show_percentage = false
@@ -27,6 +39,8 @@ show_percentage = false
 custom_minimum_size = Vector2(8, 0)
 layout_mode = 2
 size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_02a3w")
+theme_override_styles/fill = SubResource("StyleBoxFlat_a1dcn")
 value = 30.0
 fill_mode = 3
 show_percentage = false

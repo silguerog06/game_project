@@ -1,0 +1,465 @@
+[gd_scene format=3 uid="uid://dw1pivd2opy7d"]
+
+[ext_resource type="Texture2D" uid="uid://wq74i1yphwtu" path="res://assets/sprites/backgrounds/combat/BBS_1.png" id="1_4v8y6"]
+[ext_resource type="Script" uid="uid://lro3lgp7nhgg" path="res://systems/combat/combat_scene.gd" id="1_naumx"]
+[ext_resource type="Texture2D" uid="uid://cat8m0psg16xj" path="res://assets/sprites/backgrounds/combat/BBS_2.png" id="2_3clp2"]
+[ext_resource type="Texture2D" uid="uid://w7k2ffyfpyjd" path="res://assets/sprites/backgrounds/combat/BBS_3.png" id="3_p3e3m"]
+[ext_resource type="Texture2D" uid="uid://bmkwwospvguap" path="res://assets/sprites/backgrounds/combat/BBS_4.png" id="4_naumx"]
+[ext_resource type="Texture2D" uid="uid://551s2mv64v75" path="res://assets/sprites/backgrounds/combat/BBS_5.png" id="5_syaik"]
+[ext_resource type="Texture2D" uid="uid://bvexxo4m5tfrb" path="res://assets/sprites/backgrounds/combat/BBS_6.png" id="6_b5a8e"]
+[ext_resource type="Texture2D" uid="uid://sf6jiu3sfeb5" path="res://assets/sprites/backgrounds/combat/BBS_7.png" id="7_0g3x4"]
+[ext_resource type="Texture2D" uid="uid://ca1sg3b1p10pk" path="res://assets/sprites/backgrounds/combat/BBS_8.png" id="8_xeeao"]
+[ext_resource type="Texture2D" uid="uid://cjsn2r8an7hgl" path="res://assets/sprites/backgrounds/combat/BBS_9.png" id="9_3gcrf"]
+[ext_resource type="Texture2D" uid="uid://4g5fyae1t6ah" path="res://assets/sprites/backgrounds/combat/BBS_10.png" id="10_urfhd"]
+[ext_resource type="Texture2D" uid="uid://blkoo4fgoj07q" path="res://assets/sprites/backgrounds/combat/BBS_11.png" id="11_5kq5s"]
+[ext_resource type="Texture2D" uid="uid://bjp4eng2eajmg" path="res://assets/sprites/backgrounds/combat/BBS_12.png" id="12_31a2a"]
+[ext_resource type="Texture2D" uid="uid://caor6rajsvccs" path="res://assets/sprites/backgrounds/combat/BBS_13.png" id="13_yl3q1"]
+[ext_resource type="Texture2D" uid="uid://c1sjgr14ane3u" path="res://assets/sprites/backgrounds/combat/BBS_14.png" id="14_my4l7"]
+[ext_resource type="Texture2D" uid="uid://cein4uytc0sqa" path="res://assets/sprites/backgrounds/combat/BBS_15.png" id="15_shqat"]
+[ext_resource type="Texture2D" uid="uid://dg17rgrhilhse" path="res://assets/sprites/backgrounds/combat/BBS_16.png" id="16_5edfu"]
+[ext_resource type="Texture2D" uid="uid://da6420efbn55v" path="res://assets/sprites/backgrounds/combat/BBS_17.png" id="17_mcnxw"]
+[ext_resource type="Texture2D" uid="uid://bb4imnuq1vjml" path="res://assets/sprites/backgrounds/combat/BBS_18.png" id="18_fopfj"]
+[ext_resource type="Texture2D" uid="uid://cr43msanir032" path="res://assets/sprites/backgrounds/combat/BBS_19.png" id="19_mga7o"]
+[ext_resource type="Texture2D" uid="uid://cesfiuhwng016" path="res://assets/sprites/backgrounds/combat/BBS_20.png" id="20_8g1ru"]
+[ext_resource type="Texture2D" uid="uid://ckgbbahc1jw3q" path="res://assets/sprites/backgrounds/combat/BBS_21.png" id="21_0cd4k"]
+[ext_resource type="Texture2D" uid="uid://436w0i0cefnr" path="res://assets/sprites/backgrounds/combat/BBS_22.png" id="22_0o6f8"]
+[ext_resource type="Texture2D" uid="uid://dacp6i78e24va" path="res://assets/sprites/backgrounds/combat/BBS_23.png" id="23_ob878"]
+[ext_resource type="Texture2D" uid="uid://f33ufg88u11s" path="res://assets/sprites/backgrounds/combat/BBS_24.png" id="24_ctqnb"]
+[ext_resource type="Texture2D" uid="uid://bqtphsnu6xf83" path="res://assets/sprites/backgrounds/combat/BBS_25.png" id="25_aew35"]
+[ext_resource type="Texture2D" uid="uid://cmx7ndwl1r6gl" path="res://assets/sprites/backgrounds/combat/BBS_26.png" id="26_v8v1y"]
+[ext_resource type="Texture2D" uid="uid://b7n6f08oxy8rl" path="res://assets/sprites/backgrounds/combat/BBS_27.png" id="27_1ayt1"]
+[ext_resource type="Texture2D" uid="uid://dxxy8efuyv8px" path="res://assets/sprites/backgrounds/combat/BBS_28.png" id="28_p81ks"]
+[ext_resource type="Texture2D" uid="uid://ec6w65eom8nt" path="res://assets/sprites/backgrounds/combat/BBS_29.png" id="29_s0lds"]
+[ext_resource type="Texture2D" uid="uid://bcrtae3sl8544" path="res://assets/sprites/backgrounds/combat/BBS_30.png" id="30_g1bcy"]
+[ext_resource type="Texture2D" uid="uid://bb61g62b26ey3" path="res://assets/sprites/backgrounds/combat/BBS_31.png" id="31_10r2j"]
+[ext_resource type="Texture2D" uid="uid://ug8tgemtln24" path="res://assets/sprites/backgrounds/combat/BBS_32.png" id="32_tw7s2"]
+[ext_resource type="Texture2D" uid="uid://enpo1ei5hd2r" path="res://assets/sprites/backgrounds/combat/BBS_33.png" id="33_6stvo"]
+[ext_resource type="Texture2D" uid="uid://c4kbqneq88cqo" path="res://assets/sprites/backgrounds/combat/BBS_34.png" id="34_l74nx"]
+[ext_resource type="Texture2D" uid="uid://c3mr7fl6f4v0q" path="res://assets/sprites/backgrounds/combat/BBS_35.png" id="35_st7rr"]
+[ext_resource type="Texture2D" uid="uid://cn8ag4417exei" path="res://assets/sprites/backgrounds/combat/BBS_36.png" id="36_jdba7"]
+[ext_resource type="Texture2D" uid="uid://db25gap6i725d" path="res://assets/sprites/backgrounds/combat/BBS_37.png" id="37_s36yt"]
+[ext_resource type="Texture2D" uid="uid://cmeba3uqs8ghg" path="res://assets/sprites/backgrounds/combat/BBS_38.png" id="38_sniet"]
+[ext_resource type="Texture2D" uid="uid://b1v1kmq0ndv0a" path="res://assets/sprites/backgrounds/combat/BBS_39.png" id="39_br0yu"]
+[ext_resource type="Texture2D" uid="uid://rio0avl2oo6k" path="res://assets/sprites/backgrounds/combat/BBS_40.png" id="40_8n7y2"]
+[ext_resource type="Texture2D" uid="uid://26im8bf6ph0s" path="res://assets/sprites/backgrounds/combat/BBS_41.png" id="41_6ibii"]
+[ext_resource type="Texture2D" uid="uid://d1mtw6cblggux" path="res://assets/sprites/backgrounds/combat/BBS_42.png" id="42_bn3up"]
+[ext_resource type="Texture2D" uid="uid://savm3ah5b2c1" path="res://assets/sprites/backgrounds/combat/BBS_43.png" id="43_yxirb"]
+[ext_resource type="Texture2D" uid="uid://jqr2bwhc2622" path="res://assets/sprites/backgrounds/combat/BBS_44.png" id="44_c1lby"]
+[ext_resource type="Texture2D" uid="uid://bweb4uii1d3ha" path="res://assets/sprites/backgrounds/combat/BBS_45.png" id="45_yogp5"]
+[ext_resource type="Texture2D" uid="uid://sj4ug5rnomau" path="res://assets/sprites/backgrounds/combat/BBS_46.png" id="46_cgdnh"]
+[ext_resource type="Texture2D" uid="uid://dnm0u35qh2ri3" path="res://assets/sprites/backgrounds/combat/BBS_47.png" id="47_h8kqk"]
+[ext_resource type="Texture2D" uid="uid://551jadgslhsb" path="res://assets/sprites/backgrounds/combat/BBS_48.png" id="48_b1ac4"]
+[ext_resource type="Texture2D" uid="uid://sibhuaf0lrev" path="res://assets/sprites/backgrounds/combat/BBS_49.png" id="49_wefu5"]
+[ext_resource type="Texture2D" uid="uid://5c44oj7fcb2q" path="res://assets/sprites/backgrounds/combat/BBS_50.png" id="50_o3ruv"]
+[ext_resource type="Texture2D" uid="uid://cnf3g788qtlmp" path="res://assets/sprites/backgrounds/combat/BBS_51.png" id="51_uuxhs"]
+[ext_resource type="Texture2D" uid="uid://dyt34pilnck2y" path="res://assets/sprites/backgrounds/combat/BBS_52.png" id="52_u02o4"]
+[ext_resource type="Texture2D" uid="uid://bpd47yy1vatd5" path="res://assets/sprites/backgrounds/combat/BBS_53.png" id="53_h65y5"]
+[ext_resource type="Texture2D" uid="uid://cvpi07t5hrnx1" path="res://assets/sprites/backgrounds/combat/BBS_54.png" id="54_nr70f"]
+[ext_resource type="Texture2D" uid="uid://bdwij2jlig64x" path="res://assets/sprites/backgrounds/combat/BBS_55.png" id="55_un2a0"]
+[ext_resource type="Texture2D" uid="uid://deb70b45ievms" path="res://assets/sprites/backgrounds/combat/BBS_56.png" id="56_hyuai"]
+[ext_resource type="Texture2D" uid="uid://b0rd0savbpfjd" path="res://assets/sprites/backgrounds/combat/BBS_57.png" id="57_drgpt"]
+[ext_resource type="Texture2D" uid="uid://ddctncwln6j0e" path="res://assets/sprites/backgrounds/combat/BBS_58.png" id="58_mey8a"]
+[ext_resource type="Texture2D" uid="uid://b4mtpkjgw1a8y" path="res://assets/sprites/backgrounds/combat/BBS_59.png" id="59_1h6jh"]
+[ext_resource type="Texture2D" uid="uid://c7eht58rhqyds" path="res://assets/sprites/backgrounds/combat/BBS_60.png" id="60_dwxlv"]
+[ext_resource type="Texture2D" uid="uid://fch7pmw0iki3" path="res://assets/sprites/backgrounds/combat/BBS_61.png" id="61_kshe6"]
+[ext_resource type="Texture2D" uid="uid://dqvo1aytykcjo" path="res://assets/sprites/backgrounds/combat/BBS_62.png" id="62_hsr0u"]
+[ext_resource type="Texture2D" uid="uid://c60vyd0gdsmbu" path="res://assets/sprites/backgrounds/combat/BBS_63.png" id="63_fk8cb"]
+[ext_resource type="Texture2D" uid="uid://ur5kl0qh8jty" path="res://assets/sprites/backgrounds/combat/BBS_64.png" id="64_i624e"]
+[ext_resource type="Texture2D" uid="uid://cd7mowb03d0se" path="res://assets/sprites/backgrounds/combat/BBS_65.png" id="65_x07ss"]
+[ext_resource type="Texture2D" uid="uid://dc2uh7giv4qsx" path="res://assets/sprites/backgrounds/combat/BBS_66.png" id="66_20twj"]
+[ext_resource type="Texture2D" uid="uid://bu0no7fmbqf02" path="res://assets/sprites/backgrounds/combat/BBS_67.png" id="67_wxptc"]
+[ext_resource type="Texture2D" uid="uid://dfu0f8uqvxm1h" path="res://assets/sprites/backgrounds/combat/BBS_68.png" id="68_5i16l"]
+[ext_resource type="Texture2D" uid="uid://dyy3fux2nb3xn" path="res://assets/sprites/backgrounds/combat/BBS_69.png" id="69_1q0yv"]
+[ext_resource type="Texture2D" uid="uid://t12gsxc4h13" path="res://assets/sprites/backgrounds/combat/BBS_70.png" id="70_pq4vj"]
+[ext_resource type="Texture2D" uid="uid://depfmf6h6266x" path="res://assets/sprites/backgrounds/combat/BBS_71.png" id="71_oxl6s"]
+[ext_resource type="Texture2D" uid="uid://coj36f1mmnlp3" path="res://assets/sprites/backgrounds/combat/BBS_72.png" id="72_jps6u"]
+[ext_resource type="Texture2D" uid="uid://bhdj617v8ra8j" path="res://assets/sprites/backgrounds/combat/BBS_73.png" id="73_ml403"]
+[ext_resource type="Texture2D" uid="uid://c6fxibavyxhqm" path="res://assets/sprites/backgrounds/combat/BBS_74.png" id="74_v2rfl"]
+[ext_resource type="Texture2D" uid="uid://ctqdx0lo1njf2" path="res://assets/sprites/backgrounds/combat/BBS_75.png" id="75_3rdfr"]
+[ext_resource type="Texture2D" uid="uid://dp4pwxbbtjprv" path="res://assets/sprites/backgrounds/combat/BBS_76.png" id="76_exyhk"]
+[ext_resource type="Texture2D" uid="uid://nsa5uj0jpkn2" path="res://assets/sprites/backgrounds/combat/BBS_77.png" id="77_5sv3e"]
+[ext_resource type="Texture2D" uid="uid://ddxmnqobjsf8c" path="res://assets/sprites/backgrounds/combat/BBS_78.png" id="78_xv3pq"]
+[ext_resource type="Texture2D" uid="uid://cc7v4oov34yvm" path="res://assets/sprites/backgrounds/combat/BBS_79.png" id="79_fgbn3"]
+[ext_resource type="Texture2D" uid="uid://bcmicij2yg3t" path="res://assets/sprites/backgrounds/combat/BBS_80.png" id="80_fhke8"]
+[ext_resource type="Texture2D" uid="uid://cbfyt5jlxhid6" path="res://assets/sprites/backgrounds/combat/BBS_81.png" id="81_1uvup"]
+[ext_resource type="Texture2D" uid="uid://dwqvrdleptw4l" path="res://assets/sprites/backgrounds/combat/BBS_82.png" id="82_8qo75"]
+[ext_resource type="Texture2D" uid="uid://bl80qo063cmk7" path="res://assets/sprites/backgrounds/combat/BBS_83.png" id="83_vfcqp"]
+[ext_resource type="Texture2D" uid="uid://ckjae57ige2bs" path="res://assets/sprites/backgrounds/combat/BBS_84.png" id="84_jkomg"]
+[ext_resource type="Texture2D" uid="uid://be1lx8ewifupj" path="res://assets/sprites/backgrounds/combat/BBS_85.png" id="85_d24vg"]
+[ext_resource type="Texture2D" uid="uid://ck0sktvdm06di" path="res://assets/sprites/backgrounds/combat/BBS_86.png" id="86_4fl68"]
+[ext_resource type="Texture2D" uid="uid://cqrn0yr8s6532" path="res://assets/sprites/backgrounds/combat/BBS_87.png" id="87_lqif3"]
+[ext_resource type="Texture2D" uid="uid://bfasxosa1la8d" path="res://assets/sprites/backgrounds/combat/BBS_88.png" id="88_2g0g1"]
+[ext_resource type="Texture2D" uid="uid://dqefehyn0ymgm" path="res://assets/sprites/backgrounds/combat/BBS_89.png" id="89_uwpis"]
+[ext_resource type="Texture2D" uid="uid://biy7lf1uh8vhh" path="res://assets/sprites/backgrounds/combat/BBS_90.png" id="90_sserv"]
+[ext_resource type="Texture2D" uid="uid://kobphwbk78nt" path="res://assets/sprites/backgrounds/combat/BBS_91.png" id="91_8qtym"]
+[ext_resource type="Texture2D" uid="uid://l3nmahhmesml" path="res://assets/sprites/backgrounds/combat/BBS_92.png" id="92_livdx"]
+[ext_resource type="Texture2D" uid="uid://bf8uo2fc1pbni" path="res://assets/sprites/backgrounds/combat/BBS_93.png" id="93_kl0d2"]
+[ext_resource type="Texture2D" uid="uid://htk48leuqyw8" path="res://assets/sprites/backgrounds/combat/BBS_94.png" id="94_4n73a"]
+[ext_resource type="Texture2D" uid="uid://dlf8u3r0nlhun" path="res://assets/sprites/backgrounds/combat/BBS_95.png" id="95_svac3"]
+[ext_resource type="Texture2D" uid="uid://bcvafesf378m4" path="res://assets/sprites/backgrounds/combat/BBS_96.png" id="96_to8pu"]
+[ext_resource type="Texture2D" uid="uid://jpqwqnke1ku6" path="res://assets/sprites/backgrounds/combat/BBS_97.png" id="97_hy68k"]
+[ext_resource type="Texture2D" uid="uid://dde4raprnvm5g" path="res://assets/sprites/backgrounds/combat/BBS_98.png" id="98_sepsm"]
+[ext_resource type="Texture2D" uid="uid://bn1egicusk4xk" path="res://assets/sprites/backgrounds/combat/BBS_99.png" id="99_jv42h"]
+[ext_resource type="Texture2D" uid="uid://c6c0jnrowrx3d" path="res://assets/sprites/backgrounds/combat/BBS_100.png" id="100_00cyt"]
+[ext_resource type="PackedScene" uid="uid://b8cp6bdtppmos" path="res://ui/combat_ui/combat_ui.tscn" id="102_p3e3m"]
+[ext_resource type="Script" uid="uid://d4klgnkc44iau" path="res://systems/combat/combat_manager.gd" id="103_naumx"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mnjqb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4v8y6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3clp2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_p3e3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_naumx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_syaik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_b5a8e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_0g3x4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xeeao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3gcrf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_urfhd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_5kq5s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_31a2a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_yl3q1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_my4l7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_shqat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_5edfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_mcnxw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_fopfj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_mga7o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_8g1ru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_0cd4k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_0o6f8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ob878")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ctqnb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_aew35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_v8v1y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_1ayt1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_p81ks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_s0lds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_g1bcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_10r2j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_tw7s2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_6stvo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_l74nx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_st7rr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_jdba7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_s36yt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_sniet")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_br0yu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_8n7y2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_6ibii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_bn3up")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_yxirb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_c1lby")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_yogp5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_cgdnh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_h8kqk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_b1ac4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_wefu5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_o3ruv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_uuxhs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_u02o4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_h65y5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_nr70f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_un2a0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_hyuai")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_drgpt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_mey8a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_1h6jh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_dwxlv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_kshe6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_hsr0u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_fk8cb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_i624e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_x07ss")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_20twj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_wxptc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_5i16l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_1q0yv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_pq4vj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_oxl6s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_jps6u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_ml403")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_v2rfl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_3rdfr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_exyhk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_5sv3e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_xv3pq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_fgbn3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_fhke8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_1uvup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_8qo75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_vfcqp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_jkomg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_d24vg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_4fl68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_lqif3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_2g0g1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_uwpis")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_sserv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_8qtym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_livdx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_kl0d2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_4n73a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_svac3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_to8pu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_hy68k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_sepsm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_jv42h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_00cyt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[node name="combat_scene" type="Node2D" unique_id=1626071346]
+script = ExtResource("1_naumx")
+enemy_count = 3
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=337075990]
+position = Vector2(320, 180)
+
+[node name="Background" type="AnimatedSprite2D" parent="." unique_id=1936278336]
+position = Vector2(320, 180)
+sprite_frames = SubResource("SpriteFrames_mnjqb")
+autoplay = "default"
+frame_progress = 0.85305035
+
+[node name="combat_ui" parent="." unique_id=1364417827 instance=ExtResource("102_p3e3m")]
+
+[node name="EntitiesSpawns" type="Node2D" parent="." unique_id=1905964384]
+position = Vector2(320, 180)
+scale = Vector2(0.5, 0.5)
+
+[node name="PlayerSpawn" type="Marker2D" parent="EntitiesSpawns" unique_id=1754548149]
+position = Vector2(-300, 0)
+
+[node name="EnemyFormations" type="Node2D" parent="EntitiesSpawns" unique_id=1063253776]
+
+[node name="Formation1" type="Node2D" parent="EntitiesSpawns/EnemyFormations" unique_id=354965559]
+
+[node name="EnemySpawn1" type="Marker2D" parent="EntitiesSpawns/EnemyFormations/Formation1" unique_id=1059927300]
+position = Vector2(350, 0)
+
+[node name="Formation2" type="Node2D" parent="EntitiesSpawns/EnemyFormations" unique_id=1288726982]
+
+[node name="EnemySpawn1" type="Marker2D" parent="EntitiesSpawns/EnemyFormations/Formation2" unique_id=772868229]
+position = Vector2(300, -150)
+
+[node name="EnemySpawn2" type="Marker2D" parent="EntitiesSpawns/EnemyFormations/Formation2" unique_id=601707732]
+position = Vector2(300, 150)
+
+[node name="Formation3" type="Node2D" parent="EntitiesSpawns/EnemyFormations" unique_id=117822858]
+
+[node name="EnemySpawn1" type="Marker2D" parent="EntitiesSpawns/EnemyFormations/Formation3" unique_id=1519474460]
+position = Vector2(250, -150)
+
+[node name="EnemySpawn2" type="Marker2D" parent="EntitiesSpawns/EnemyFormations/Formation3" unique_id=3339994]
+position = Vector2(400, 0)
+
+[node name="EnemySpawn3" type="Marker2D" parent="EntitiesSpawns/EnemyFormations/Formation3" unique_id=1468097]
+position = Vector2(250, 150)
+
+[node name="CombatManager" type="Node" parent="." unique_id=552672947 node_paths=PackedStringArray("combat_ui")]
+script = ExtResource("103_naumx")
+combat_ui = NodePath("../combat_ui")

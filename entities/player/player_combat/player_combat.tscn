@@ -11,9 +11,9 @@ script = ExtResource("1_abrql")
 texture_filter = 1
 scale = Vector2(0.8, 0.8)
 sprite_frames = ExtResource("2_iyvjc")
-animation = &"idle"
+animation = &"idle_burst"
 autoplay = "idle"
-frame_progress = 0.27719146
+frame_progress = 0.9232744
 
 [node name="MarkerUI" type="Marker2D" parent="." unique_id=1335442162]
 position = Vector2(2.5, -1.3333333)
