@@ -7,6 +7,7 @@ var enemy_current_health: int
 
 func _ready():
 	GameBus.enemy_marker_ready.emit.call_deferred($Marker2D)
+	add_to_group("enemies")
 	enemy_current_health = enemy_max_health
 
 func die():
