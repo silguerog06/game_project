@@ -10,6 +10,14 @@ func setup(target_frame: Node2D):
 	target_instance = target_frame
 	refresh_targets()
 
+func activate():
+	refresh_targets()
+	
+	if not remember_target:
+		target_index = 0
+	
+	update_visuals()
+
 func refresh_targets():
 	targets = get_tree().get_nodes_in_group("enemies")
 	if targets.is_empty():
@@ -21,8 +29,6 @@ func refresh_targets():
 			target_index = max(0, targets.size() - 1)
 		else:
 			target_index = 0
-	
-	update_visuals()
 
 func update_visuals():
 	if targets.size() > 0:

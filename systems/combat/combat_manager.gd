@@ -51,7 +51,7 @@ func change_state(new_state):
 		State.PLAYER_TURN:
 			if current_actions >= 1:
 				combat_ui.show_actions(true)
-				target_system.refresh_targets()
+				target_system.activate()
 			else:
 				change_state(State.ENEMY_TURN)
 	
