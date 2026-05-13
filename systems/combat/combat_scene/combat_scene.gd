@@ -20,7 +20,7 @@ func _spawn_enemies() -> void:
 	var enemies: Array[PackedScene] = []
 	
 	for i in range(enemy_count):
-		enemies.append(CombatManager.enemy_to_spawn)
+		enemies.append(CombatData.enemy_to_spawn)
 	
 	var selected_markers: Array = []
 	
@@ -41,4 +41,4 @@ func _spawn_enemies() -> void:
 			enemy_instance.global_position = selected_markers[i].global_position
 			add_child(enemy_instance)
 	
-	CombatManager.enemies_to_spawn.clear()
+	CombatData.enemies_to_spawn.clear()

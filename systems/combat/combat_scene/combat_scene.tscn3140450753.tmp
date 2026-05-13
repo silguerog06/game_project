@@ -102,9 +102,9 @@
 [ext_resource type="Texture2D" uid="uid://bn1egicusk4xk" path="res://assets/sprites/backgrounds/combat/BBS_99.png" id="99_jv42h"]
 [ext_resource type="Texture2D" uid="uid://c6c0jnrowrx3d" path="res://assets/sprites/backgrounds/combat/BBS_100.png" id="100_00cyt"]
 [ext_resource type="PackedScene" uid="uid://b8cp6bdtppmos" path="res://ui/combat_ui/combat_ui.tscn" id="102_p3e3m"]
-[ext_resource type="Script" uid="uid://d4klgnkc44iau" path="res://systems/combat/combat_manager.gd" id="103_naumx"]
+[ext_resource type="Script" uid="uid://d4klgnkc44iau" path="res://core/combat_manager.gd" id="103_naumx"]
 [ext_resource type="PackedScene" uid="uid://bdirieu0sdpxc" path="res://systems/combat/target_frame/target_frame.tscn" id="104_mja4t"]
-[ext_resource type="Script" uid="uid://bcrb1uj22ua4p" path="res://systems/combat/target_system.gd" id="105_1lldu"]
+[ext_resource type="Script" uid="uid://bcrb1uj22ua4p" path="res://core/target_system.gd" id="105_1lldu"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mnjqb"]
 animations = [{

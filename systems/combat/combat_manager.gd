@@ -2,18 +2,19 @@ extends Node
 
 enum State { START, START_PLAYER_TURN, PLAYER_TURN, ENEMY_TURN, BUSY, WIN, LOSE }
 
-var current_state = State.START
-
 @export var combat_ui: CombatUI
 @export var target_scene: PackedScene
 
 var target_instance: Node2D
-var target_index: int = 0
-var targets: Array = []
+
 var actions_per_turn: int = 2
 var current_actions: int = 0
 var is_burst_active: bool = false
 var player_combat: PlayerCombat
+
+var current_state = State.START
+
+@onready var target_system = $TargetSystem
 
 func _ready():
 	GameBus.player_combat_spawned.connect(func(p): player_combat = p)
@@ -50,7 +51,7 @@ func change_state(new_state):
 		State.PLAYER_TURN:
 			if current_actions >= 1:
 				combat_ui.show_actions(true)
-				start_targeting()
+				target_system.refresh_targets()
 			else:
 				change_state(State.ENEMY_TURN)
 	
@@ -90,6 +91,7 @@ func _on_guard_pressed():
 		print("\n¡Has seleccionado GUARD!")
 		change_state(State.BUSY) # Bloqueamos acciones
 		await get_tree().create_timer(0.15).timeout
+		target_system.stop_hard()
 		combat_ui.show_actions(false)
 		await get_tree().create_timer(1.5).timeout
 		# Lógica
@@ -102,6 +104,7 @@ func _on_item_pressed():
 		print("\n¡Has seleccionado ITEM!")
 		change_state(State.BUSY) # Bloqueamos acciones
 		await get_tree().create_timer(0.15).timeout
+		target_system.stop_hard()
 		combat_ui.show_actions(false)
 		await get_tree().create_timer(1.5).timeout
 		# Lógica
@@ -114,6 +117,7 @@ func _on_flee_pressed():
 		print("\n¡Has seleccionado FLEE!")
 		change_state(State.BUSY) # Bloqueamos acciones
 		await get_tree().create_timer(0.15).timeout
+		target_system.stop_hard()
 		combat_ui.show_actions(false)
 		await get_tree().create_timer(1.5).timeout
 		# Lógica
@@ -121,62 +125,29 @@ func _on_flee_pressed():
 
 func _on_attack_pressed():
 	if current_state == State.PLAYER_TURN:
-		stop_targeting()
 		current_actions -= 1
 		update_action_label()
 		print("\n¡Has seleccionado ATTACK!")
 		change_state(State.BUSY) # Bloqueamos acciones
 		await get_tree().create_timer(0.15).timeout
+		target_system.stop_soft()
 		combat_ui.show_actions(false)
 		await get_tree().create_timer(1.5).timeout
 		# Lógica
 		change_state(State.PLAYER_TURN)
 
 # TARGET FRAME FUNCTIONS
-# init
 func _spawn_target_frame():
 	target_instance = target_scene.instantiate()
 	add_child(target_instance)
-	target_instance.visible = true
+	target_system.setup(target_instance)
 
-# Llamar cuando enemigo muere
-func refresh_targets():
-	targets = get_tree().get_nodes_in_group("enemies")
-	if target_index >= targets.size():
-		target_index = 0
-		
-# Llamar cuando se mueve cursor (target_index)
-func update_target_position():
-	if targets.size() > 0:
-		var current_enemy = targets[target_index]
-		var target_pos = current_enemy.get_node("Marker2D").global_position
-		target_instance.global_position = target_pos
-		target_instance.play("idle")
-		target_instance.visible = true
-	else:
-		target_instance.visible = false
-
-# Llamar cuando haya que apuntar
-func start_targeting():
-	refresh_targets()
-	target_index = 0
-	update_target_position()
-	
-func stop_targeting():
-	if target_instance:
-		target_instance.play("selected")
-		await target_instance.animation_finished
-		target_instance.visible = false
-	
 # INPUT
 func _unhandled_input(event):
-	if current_state == State.PLAYER_TURN and targets.size() > 0:
+	if current_state == State.PLAYER_TURN:
 		
 		if event.is_action_pressed("ui_right") or event.is_action_pressed("ui_down"):
-			target_index = (target_index + 1) % targets.size()
-			update_target_position()
-			# Opcional: Sonido de "click" al mover
+			target_system.move_selection(1)
 			
 		elif event.is_action_pressed("ui_left") or event.is_action_pressed("ui_up"):
-			target_index = (target_index - 1 + targets.size()) % targets.size()
-			update_target_position()
+			target_system.move_selection(-1)
