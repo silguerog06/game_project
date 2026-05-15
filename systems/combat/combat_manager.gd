@@ -17,7 +17,7 @@ var current_state = State.START
 @onready var target_system = $TargetSystem
 
 func _ready():
-	GameBus.player_combat_spawned.connect(func(p): player_combat = p)
+	GameBus.player_combat_spawned.connect(_on_player_ready)
 	if combat_ui:
 		combat_ui.burst_selected.connect(_on_burst_pressed)
 		combat_ui.guard_selected.connect(_on_guard_pressed)
@@ -28,6 +28,9 @@ func _ready():
 		_spawn_target_frame()
 	await get_tree().process_frame
 	setup_combat()
+	
+func _on_player_ready(player):
+	player_combat = player
 
 func setup_combat():
 	print("El combate comienza...")
@@ -73,6 +76,7 @@ func update_burst_animation():
 
 func execute_enemy_turn():
 	print("El enemigo te ataca!")
+	player_combat.take_damage(10)
 	await get_tree().create_timer(1.0).timeout
 	change_state(State.START_PLAYER_TURN)
 	print("Tu turno de nuevo!")
@@ -107,6 +111,7 @@ func _on_item_pressed():
 		target_system.stop_hard()
 		combat_ui.show_actions(false)
 		await get_tree().create_timer(1.5).timeout
+		player_combat.heal_damage(100)
 		# Lógica
 		change_state(State.PLAYER_TURN)
 
@@ -133,6 +138,7 @@ func _on_attack_pressed():
 		target_system.stop_soft()
 		combat_ui.show_actions(false)
 		await get_tree().create_timer(1.5).timeout
+		player_combat.use_energy(10)
 		# Lógica
 		change_state(State.PLAYER_TURN)
 

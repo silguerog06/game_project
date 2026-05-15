@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://b2lwhhji8i3ih"]
 
+[ext_resource type="Script" uid="uid://c8erbigjuxkf3" path="res://ui/combat_ui/bars_ui/bars_ui.gd" id="1_edprp"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ymk6w"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_edprp"]
@@ -11,6 +13,7 @@ bg_color = Color(1, 0.30333334, 0.24000001, 1)
 bg_color = Color(0.2774142, 0.6961349, 0.4340268, 1)
 
 [node name="bars_ui" type="CanvasLayer" unique_id=896323894]
+script = ExtResource("1_edprp")
 
 [node name="LMarginContainer" type="MarginContainer" parent="." unique_id=465526044]
 anchors_preset = 9
@@ -31,7 +34,7 @@ layout_mode = 2
 size_flags_vertical = 1
 theme_override_styles/background = SubResource("StyleBoxFlat_ymk6w")
 theme_override_styles/fill = SubResource("StyleBoxFlat_edprp")
-value = 70.0
+value = 50.0
 fill_mode = 3
 show_percentage = false
 
@@ -41,7 +44,7 @@ layout_mode = 2
 size_flags_vertical = 1
 theme_override_styles/background = SubResource("StyleBoxFlat_02a3w")
 theme_override_styles/fill = SubResource("StyleBoxFlat_a1dcn")
-value = 30.0
+value = 50.0
 fill_mode = 3
 show_percentage = false
 
